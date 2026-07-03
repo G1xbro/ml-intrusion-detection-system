@@ -43,7 +43,7 @@ Evaluated multiple foundational and ensemble classification algorithms to track 
 |Random Forest|99.99%|0|29|Excellent|
 |XGBoost|99.99%|3|17|Production Winner|
 
-
+    ![Application image](/images/IDS_using_AI.png)
 ---
 
 ## 💻 How to Run the Simulation
