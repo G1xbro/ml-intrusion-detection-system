@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Cybersecurity Project Data Exclusions
+data/
+*.csv
+*.pcap
+models/*.joblib
+models/*.pkl
