@@ -8,29 +8,33 @@ This project scopes down millions of rows of raw corporate network logs into key
 * **Credential Brute Forcing:** Identifying authentication hammering signatures (FTP/SSH Patator attacks).
 * **Web Exploitation:** Flagging Cross-Site Scripting (XSS) and SQL Injection payload behaviors based on forward/backward stream anomalies.
 
+    ![Data Distribution](/images/Normal_PortScan_FTP_SSH.png)
+    <br>
+    ![web Data Distribution](/images/Web_attacks.png)
+
 ## 📂 Repository Structure
 ```text
-├── data/                       # Local dataset storage
+├── data/                           # Local dataset storage
 |   ├── oscp_scope_traffic.csv
 │   └── sample_live_traffic.csv
-├── models/                     # Trained serialization binaries (.joblib)
+├── models/                         # Trained serialization binaries (.joblib)
 │   ├── scaler.joblib
 │   └── xgb_model.joblib
-├── notebooks/                  # Exploratory Data Analysis & Visualization
+├── notebooks/                      # Exploratory Data Analysis & Visualization
 │   └── 01_eda_and_visualization.ipynb
-├── src/                        # Production-ready codebase
+├── src/                            # Production-ready codebase
 │   ├── models/
 │   │   ├── train_dt.py
 │   │   ├── train_lr.py
 │   │   ├── train_rf.py
 │   │   └── train_xgb.py
 │   └── preprocess.py
-├── app.py                      # Interactive Network Simulation Dashboard
-└── generate_test_stream.py     # Data stream emulator utility
+├── app.py                          # Interactive Network Simulation Dashboard
+└── generate_test_stream.py         # Data stream emulator utility
 ```
 
 ## 📈 Model Performance Matrix
-Evaluated multiple foundational and ensemble classification algorithms to track overall `accuracy`, `precision`, and minimizing dangerous `False Negatives` (missed exploits):
+Evaluated multiple foundational and ensemble classification algorithms to track overall **accuracy**, **precision**, and minimizing dangerous **False Negatives** (missed exploits):
 
 |Model Architecture|Accuracy|False Positives|False Negatives|Status|
 |------------------|--------|---------------|---------------|------|
@@ -38,6 +42,7 @@ Evaluated multiple foundational and ensemble classification algorithms to track 
 |Decision Tree|99.98%|11|42|Robust|
 |Random Forest|99.99%|0|29|Excellent|
 |XGBoost|99.99%|3|17|Production Winner|
+
 
 ---
 
