@@ -61,9 +61,6 @@ Evaluated multiple foundational and ensemble classification algorithms to track 
     ```bash
     source venv/bin/activate  # Windows: venv\Scripts\activate
     ```
-    ```
-    pip install -r requirements.txt
-    ```
 3. Execute the Engine Simulator:
     ```bash
     python app.py
